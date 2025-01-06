@@ -36,16 +36,17 @@
 </head>
 <body data-page="publications">
   <header>
-    <nav>
+    <nav class="nav-bar fixed-top">
       <div class="container nav-container">
-        <button id="menu-toggle" aria-label="Toggle Menu">
+        <button id="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" class="toggle">
           <i class="fas fa-bars"></i>
         </button>
         <ul class="nav-links">
           <li><a href="index.html" class="nav-link" data-page="home">About</a></li>
           <li><a href="publications.html" class="nav-link" data-page="publications">Publications</a></li>
           <!-- <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li> -->
-          <li><a href="data/CV-1.pdf" target="_blank" class="nav-link">CV</a></li>
+          <li><a href="activities.html" class="nav-link" data-page="activities">Activities</a></li>
+          <li><a href="cv.html" target="_blank" class="nav-link" data-page="cv">CV</a></li>
         </ul>
         <button id="theme-toggle" aria-label="Toggle Theme">
           <i class="fas fa-sun"></i>
@@ -76,6 +77,7 @@
             <td></td>
             <td>
               <a href="https://www.researchgate.net/publication/386397886_Ensemble_Approach_for_Blood_Vessel_Segmentation_in_Retinal_Images_Combining_UNet_and_SegNet_Models" target="_blank"><button class="button-59" role="button">Paper</button></a>
+              <a href="https://github.com/SiddharthMaheshB/retinal-image-segmentation" target="_blank"><button class="button-59" role="button">Code</button></a>
                 <button class="button-59 collapsible" role="button">Abstract</button>
                 <div class="content">
                   <p>It is critical for the proper segmentation of blood vessels in retinal images that for the early diagnosis and continuous monitoring of many retinal diseases, including diabetic retinopathy, glaucoma, and age-related macular degeneration. The paper introduces a novel approach that combines the strengths of architectures in deep learning with traditional machine learning techniques to boost performance in the segmentation of blood vessels in retinal images. Here, we combine the two well-known convolutional neural networks on the task of medical image segmentation, namely, U-Net and SegNet, with a logistic regression classifier at the end. Due to the symmetric architecture of the U-Net model, it catches complex vessel structures and fine details very well. The feature extraction capability of the SegNet model is good, and it uses the encoder-decoder framework. Using both models sequentially gives initial segmentation outputs. Fine tuning is performed with logistic regression in order to provide a more accurate and consistent output. Basically, it is a hybrid approach towards overcoming problems in blood vessel segmentation attributed to size variation of the vessel, contrast, and intensity levels in retinal images. Our approach was trained and tested on standard datasets of retinal images, and manifested the superiority of segmentation accuracy and the generalization ability. The results obtained with the final accuracy of 0.97021 outline the advantage in combining deep learning models with traditional machine learning classifiers to contribute not only to more precise segmentation but also to improved reliability of medical image analysis automated diagnostic systems, which opens further possibilities for real-world applications in retinal disease detection and management.</p>
@@ -101,6 +103,7 @@
             <td></td>
             <td>
               <a href="https://www.researchgate.net/publication/386411316_Deep_Learning_and_OCT_Imaging_A_Novel_Ensemble_Approach_for_Eye_Disease_Diagnosis" target="_blank"><button class="button-59" role="button">Paper</button></a>
+              <a href="https://github.com/AbhiramDodda/Eye-disease-using-OCT" target="_blank"><button class="button-59" role="button">Code</button></a>
                 <button class="button-59 collapsible" role="button">Abstract</button>
                 <div class="content">
                   <p>Most eye diseases, if not diagnosed, can result in severe vision impairments. The OCT scan images of the retina give a clear perception; hence, it is useful in diagnosing specific eye diseases. In this paper, the state-of-the-art deep learning technique is adopted with three CNN architectures: VGG16, Incep-tionV3, and InceptionResNetV2 for classifying diseases from OCT images. In this regard, ensemble methods tend to supplement the strength of each model and refine the classification accuracy. The high accuracy of 98.86% in the identification of ocular diseases has been improved with a marked improvement in models adapted to the OCT dataset, reusing existing knowledge.</p>
@@ -126,6 +129,7 @@
             <td></td>
             <td>
               <a href="https://www.researchgate.net/publication/384760694_A_Novel_Deep-Learning_Based_Classification_of_Skin_Diseases" target="_blank"><button class="button-59" role="button">Paper</button></a>
+              <a href="https://github.com/AbhiramDodda/SkinDiseaseDetection" target="_blank"><button class="button-59" role="button">Code</button></a>
                 <button class="button-59 collapsible" role="button">Abstract</button>
                 <div class="content">
                   <p>Skin diseases are caused by various factors including bacteria, fungus, and genetics. Some of the diseases causes rough, scaly patches on skin, while others, pose a serious health problems. Skin diseases if not treated at early stages can spread to other parts of body and complicate treatment. Using Deep Learning techniques, medical professionals can confirm presence of a disease and start treatment immediately. In this paper, Deep Convolutional Neural Network (CNN) was used to perform skin disease classification. Data acquired was imbalanced. Combination of Data Augmentation and Under-sampling was used to balance the dataset and prevent overfitting on majority classes. The Deep CNN model was able to achieve an accuracy of 95.27%. Thus Deep CNNs are able to classify skin disease images with sufficient accuracy.</p>
@@ -151,6 +155,7 @@
             <td></td>
             <td>
               <a href="https://www.researchgate.net/publication/384760701_A_Novel_Two-Stage_Deep_Learning_Framework_for_Plant_Disease_Detection" target="_blank"><button class="button-59" role="button">Paper</button></a>
+              <a href="https://github.com/AbhiramDodda/Two-stage-plant-diesease-detection" target="_blank"><button class="button-59" role="button">Code</button></a>
                 <button class="button-59 collapsible" role="button">Abstract</button>
                 <div class="content">
                   <p>This paper presents a two-stage image classification scheme for detecting plant leaf diseases using transfer learning techniques. Their timely detection and correct diagnosis are very important in applying crop management techniques that ensure food security. This model did better compared to the traditional single-stage classification models, since it achieved a high accuracy of 96.82%. The two stages are outstanding in focusing learning at each stage to attain superior accuracy for hierarchical classification. The first stage classifies plant species, and the second stage further classifies the disease. This paper presents an accurate and much more efficient method to undertake plant disease detection; it makes a great deal of difference in early disease intervention and crop yield optimization for sustainable agriculture practices.</p>

@@ -432,19 +432,18 @@ th {
 #publications {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 0.5rem 0.5rem;
 }
 
 #publications h1 {
-  text-align: center;
-  margin-bottom: 2rem;
+  text-align: center;;
   font-size: 2.5rem;
 }
 
 /* Publication table styles */
 #publications table {
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   border-collapse: separate;
   border-spacing: 0 1rem;
 }
@@ -457,10 +456,6 @@ th {
   margin-right: 1.5rem;
 }
 
-.publication-details {
-  padding: 1rem 0;
-}
-
 .publication-details h2 {
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
@@ -469,7 +464,7 @@ th {
 
 .publication-details p {
   margin-bottom: 0.5rem;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 /* Button styles */
@@ -487,7 +482,7 @@ th {
 
 .content p {
   padding: 1rem;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 /* Mobile styles */
@@ -589,4 +584,156 @@ th {
     flex-wrap: wrap;
     gap: 0.5rem;
   }
+}
+
+/******************************************************************************************/
+/* Activities */
+/******************************************************************************************/
+/* Activities page container */
+.activities-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.activities-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Activity card styles */
+.activity-card {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.activity-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.activity-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.activity-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.activity-image img:hover {
+  transform: scale(1.02);
+}
+
+.activity-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.activity-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #E16A54; /* Using your existing accent color */
+}
+
+.activity-date {
+  display: block;
+  font-size: 1rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.activity-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 920px) {
+  .activities-container h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+  }
+
+  .activity-card {
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+  }
+
+  .activity-card.reverse {
+      flex-direction: column;
+  }
+
+  .activity-image {
+      min-width: 100%;
+      max-width: 100%;
+  }
+
+  .activity-content {
+      min-width: 100%;
+  }
+
+  .activity-content h2 {
+      font-size: 1.5rem;
+  }
+
+  .activity-content p {
+      font-size: 1rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .activities-container {
+      padding: 1rem;
+  }
+
+  .activities-container h1 {
+      font-size: 1.8rem;
+  }
+
+  .activity-card {
+      margin-bottom: 2rem;
+  }
+
+  .activity-content h2 {
+      font-size: 1.3rem;
+  }
+
+  .activity-date {
+      font-size: 0.9rem;
+  }
+}
+
+/* Optional: Add a fade-in animation for cards */
+.activity-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Add delay for consecutive cards */
+.activity-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.activity-card:nth-child(3) {
+  animation-delay: 0.4s;
 }
